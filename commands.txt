@@ -1,0 +1,24 @@
+# install on mac
+brew tap mongodb/brew
+brew install mongodb-community@4.2
+
+# start service
+brew services start mongodb-community@4.2
+
+# stop service
+brew services stop mongodb-community@4.2
+
+# access mongo shell
+mongo
+
+# show all databases
+show dbs
+
+# activate db business
+use business
+
+# show collections in current db
+show collections
+
+# pretty print of "reviews" collection of current db
+db.reviews.find().pretty()
